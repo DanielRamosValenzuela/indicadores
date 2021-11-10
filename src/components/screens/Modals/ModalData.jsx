@@ -45,7 +45,7 @@ export const ModalData = ({ dataSelected }) => {
           </div>
           <div className="modal-body text-center">
             <span className="text-center">
-              <strong style={{ color: "#021691", fontSize: "24px" }}>
+              <strong style={{ color: "dodgerblue", fontSize: "24px" }}>
                 {symbolUM(dataSelected.unidad_medida) +
                   " " +
                   dataSelected.valor}
@@ -78,7 +78,7 @@ export const ModalData = ({ dataSelected }) => {
               className="btn btn-secondary"
               data-bs-dismiss="modal"
             >
-              Close
+              Cerrar
             </button>
           </div>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./navbar.scss";
 
-export const Navbar = () => {
+export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
-    <div className="navbar">
+    <div className={"navbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -11,7 +11,10 @@ export const Navbar = () => {
           </a>
         </div>
         <div className="right">
-          <div className="hamburger-menu">
+          <div
+            className="hamburger-menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
             <span className="line1"></span>
             <span className="line2"></span>
             <span className="line3"></span>

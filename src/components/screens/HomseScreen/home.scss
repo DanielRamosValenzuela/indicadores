@@ -1,3 +1,36 @@
-.fullwidth {
-  width: 100%;
+.homescreen {
+  padding: 20px;
+
+  .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: dodgerblue;
+  }
+
+  .text {
+    span {
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+        color: lightcoral;
+      }
+    }
+    p {
+      display: block;
+      color: dodgerblue;
+    }
+  }
+
+  .exclamation {
+    cursor: pointer;
+    color: dodgerblue;
+    transition: all 0.3s ease;
+    font-size: 24px;
+    &:hover {
+      color: lightcoral;
+    }
+  }
 }
